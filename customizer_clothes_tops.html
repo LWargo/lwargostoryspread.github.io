@@ -70,11 +70,9 @@
             }
             .subtabs{
                 position: absolute;
-                width: 84.63px;
                 height: 30.78px;
                 top: 107.61px;
                 background: #F5F5F5;
-                border-radius: 3.07752px;
                 font-family: 'DIN Round Pro';
                 font-style: normal;
                 font-weight: 700;
@@ -84,14 +82,43 @@
                 align-items: center;
                 text-transform: uppercase;
                 color: #C4C4C4;
+                border: none;
+            }
+            .subtabs_current{
+                position: absolute;
+                height: 30.78px;
+                top: 107.61px;
+                background: rgba(0,174,239,0.14);
+                font-family: 'DIN Round Pro';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13.8488px;
+                line-height: 18px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: #00aeef;
+                border: none;
             }
             .subtabs:hover{
                 cursor: pointer;
             }
-            .subtabs_tops{left:14px;}
-            .subtabs_bottoms{left:106.32px;}
-            .subtabs_shoes{left: 200.96px;}
-            .subtabs_accessories{left:293.29px;}
+            .subtabs_tops{
+                left:14px;
+                width: 84.63px;
+            }
+            .subtabs_bottoms{
+                left:106.32px;
+                width: 84.63px;
+            }
+            .subtabs_shoes{
+                left: 200.96px;
+                width: 84.63px;
+            }
+            .subtabs_accessories{
+                left:293.29px;
+                width:117.72px;
+            }
         </style>
         <title>Character Customizer Clothes Tops</title>
     </head>
@@ -104,7 +131,7 @@
         <button class="tabs tabposes"type="button">Poses</button>
         <button class="tabs tabcharcust"type="button">Character Customization</button>
         <div class="second_dividing_line"></div>
-        <button class="subtabs subtabs_tops"type=button>Tops</button>
+        <button class="subtabs_current subtabs_tops"type=button>Tops</button>
         <button class="subtabs subtabs_bottoms" type="button">Bottoms</button>
         <button class="subtabs subtabs_shoes"type="button">Shoes</button>
         <button class="subtabs subtabs_accessories"type="button">Accesories</button>
