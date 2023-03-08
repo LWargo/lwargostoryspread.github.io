@@ -1,0 +1,249 @@
+.page_title{
+    position: absolute;
+    width: 160.15px;
+    height: 14.98px;
+    left: 23px;
+    top: 14px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.9783px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+}
+.line_under_title{
+    position: absolute;
+    width: 800px;
+    height: 0px;
+    left: 0px;
+    top: 46px;                
+    border: 1.15217px solid #BDBDBD;
+    transform: rotate(179.97deg);
+}
+.rectangle{
+    position: absolute;
+    width: 284px;
+    height: 469px;
+    left: 516px;
+    top: 47px;
+    border: 0.52795px solid #A2A2A2;
+    background: #F6F6F6;
+
+}
+.tabs{
+    position: absolute;
+    height: 15px;
+    top: 71px;
+    font-family: 'DIN Round Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #BCBCBC;
+    border: none;
+    background-color: transparent;
+}
+.tabs:hover{
+    cursor: pointer;
+}
+.tabclothes{left:21px;}
+.tabfacial{left:100px;}
+.tabposes{left: 241px;}
+.tabcharcust{left: 306px;}
+.second_dividing_line{
+    position: absolute;
+    width: 517px;
+    height: 0px;
+    left: -1px;
+    top: 93px;
+    border: 0.417984px solid #A2A2A2;
+}
+.subtabs{
+    position: absolute;
+    height: 30.78px;
+    top: 107.61px;
+    background: #F5F5F5;
+    font-family: 'DIN Round Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.8488px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    border: none;
+}
+.subtabs_current{
+    position: absolute;
+    height: 30.78px;
+    top: 107.61px;
+    background: rgba(0,174,239,0.14);
+    font-family: 'DIN Round Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.8488px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #00aeef;
+    border: none;
+}
+.subtabs:hover{
+    cursor: pointer;
+}
+.subtabs_tops{
+    left:14px;
+    width: 84.63px;
+}
+.subtabs_bottoms{
+    left:106.32px;
+    width: 84.63px;
+}
+.subtabs_shoes{
+    left: 200.96px;
+    width: 84.63px;
+}
+.subtabs_accessories{
+    left:293.29px;
+    width:117.72px;
+}
+.tab_current_underline{
+    position: absolute;
+    width: 51px;
+    height: 0px;
+    left: 21px;
+    top: 93px;
+
+    border: 0.906962px solid #00AEEF;
+}
+.bottom_line{
+    position: absolute;
+    width: 800px;
+    height: 0px;
+    left: -1px;
+    top: 517px;
+
+    border: 0.52795px solid #A2A2A2;
+}
+.vert_line{
+    position: absolute;
+    width: 0px;
+    height: 471px;
+    left:51px;
+    top: 46px;
+}
+.cancel_button{
+    position: absolute;
+    width: 105.71px;
+    height: 40px;
+    left: 14px;
+    top: 527px;
+    font-family: 'DIN Round Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.8571px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    background: #C4C4C4;
+    border: none;
+}
+.cancel_button :hover{cursor: pointer;}
+.save_button:hover{cursor: pointer;}
+.save_button{
+    position: absolute;
+    width: 105.71px;
+    height: 40px;
+    left: 640px;
+    top: 527px;
+    border: none;
+    background: #00AEEF;
+    font-family: 'DIN Round Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.8571px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.color-blocks{
+    position: absolute;
+    width: 25.83px;
+    height: 25.83px;
+    left:524px;
+}
+.blue-block{
+    top:59px;
+    background: #304178;
+}
+.green-block{
+    top:84.83px;
+    background: #05Deb8;
+}
+.pumpkin-block{
+    top: 110.67px;
+    background: #FF9100;
+}
+.brown-block{
+    top:136.5px;
+    background: #5c4939;
+}
+.purple-block{
+    top: 162.33px;
+    background: #6542a0;
+}
+.orange-block{
+    top:188.17px;
+    background: #d1723a;
+}
+.rotation{
+    position: absolute;
+    width: 58px;
+    height: 16px;
+    left: 603.38px;
+    top: 460.66px;
+
+    font-family: 'DIN Round Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.6499px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #423124;
+}
+.avatar-img{
+    position: absolute;
+    max-width: 120px;
+    max-height: 332px;
+    left: 572px;
+    top: 83px;
+    content: url(assets/css/Storyspread\ Female\ JPEG.jpg);
+
+} 
+.gray-square{
+    position: absolute;
+    width: 81.96px;
+    height: 81.96px;
+    background: #F7F7F7;
+    border-radius: 8.3px;
+}
