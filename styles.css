@@ -160,7 +160,7 @@
     background: #C4C4C4;
     border: none;
 }
-.cancel_button :hover{cursor: pointer;}
+.cancel_button:hover{cursor: pointer;}
 .save_button:hover{cursor: pointer;}
 .save_button{
     position: absolute;
