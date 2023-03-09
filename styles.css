@@ -246,9 +246,9 @@
     height: 0;
     left: 598.79px;
     top: 425.19px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: #00AEEF;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px #00AEEF;
     background: #00AEEF;
     transform: matrix(-0.77, 0.64, 0.64, 0.77, 0, 0);
 
