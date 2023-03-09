@@ -240,6 +240,47 @@
     content: url(assets/css/Storyspread\ Female\ JPEG.jpg);
 
 } 
+.rotate-arrow-left-head{
+    position: absolute;
+    width: 13.97px;
+    height: 9.96px;
+    left: 598.79px;
+    top: 425.19px;
+    
+    background: #C4C4C4;
+    transform: matrix(-0.77, 0.64, 0.64, 0.77, 0, 0);
+
+}
+.rotate-arrow-left-body{
+    position: absolute;
+    width: 34.06px;
+    height: 12.3px;
+    left: 629.69px;
+    top: 441.49px;
+
+    background: #C4C4C4;
+    transform: matrix(-0.96, -0.28, -0.28, 0.96, 0, 0);
+}
+.rotate-arrow-right-head{
+    position: absolute;
+    width: 13.97px;
+    height: 9.96px;
+    left: 661.79px;
+    top: 425.19px;
+    
+    background: #C4C4C4;
+    transform: rotate(39.42deg);
+}
+.rotate-arrow-right-body{
+    position: absolute;
+    width: 34.06px;
+    height: 12.3px;
+    left: 630.89px;
+    top: 441.49px;
+    
+    background: #C4C4C4;
+    transform: rotate(-15.97deg);    
+}
 .gray-square{
     position: absolute;
     width: 81.96px;
