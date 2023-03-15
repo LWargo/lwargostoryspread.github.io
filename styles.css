@@ -1,3 +1,4 @@
+<script src="https://kit.fontawesome.com/694bad09f4.js" crossorigin="anonymous"></script>
 .page_title{
     position: absolute;
     width: 160.15px;
@@ -289,4 +290,13 @@
     height: 81.96px;
     background: #F7F7F7;
     border-radius: 8.3px;
+}
+.gray-circle{
+    position: absolute;
+    width: 79.89px;
+    height: 79.89px;
+    left: 175.18px;
+    top: 167px;
+    border-radius: 50%;
+    background: #F7F7F7;
 }
