@@ -285,6 +285,13 @@
     background: #C4C4C4;
     transform: rotate(-15.97deg);    
 }
+.head{
+    width: 0;
+    height:0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50 pc solid #00AEEF;
+}
 .gray-square{
     position: absolute;
     width: 81.96px;
