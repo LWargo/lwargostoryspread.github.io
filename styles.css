@@ -126,6 +126,18 @@
 
     border: 0.906962px solid #00AEEF;
 }
+.tab_tb{
+    width: 51px;
+    left: 21px;
+}
+.tab_face{
+    width: 113px;
+    left: 100px;
+}
+.tab_cc{
+    width: 269px;
+    left: 473px;
+}
 .bottom_line{
     position: absolute;
     width: 800px;
