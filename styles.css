@@ -325,11 +325,11 @@
     background: #F7F7F7;
 }
 .gray-triangle{
-    width: 99.6px;
-    height: 99.6px;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 40px solid #F7F7F7;
+    width: 79.6px;
+    height: 79.6px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid #F7F7F7;
     border-radius: 4.15px;
 }
 #star-five {
