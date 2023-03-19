@@ -411,7 +411,7 @@
 }
 .face-shape{
     position: absolute;
-    width: 80px;
+    width: 90px;
     height: 175px;
     border-radius: 50%;
     background: #F7F7F7;
@@ -419,4 +419,24 @@
 .fx00{
     left: 47px;
     top: 126px;
+}
+.fx01{
+   top: 126px;
+   left:185.63px; 
+}
+.fx02{
+    top: 126px;
+    left: 324.25px;
+}
+.fx10{
+    top:333.19px;
+    left: 47px;
+}
+.fx11{
+    top:333.19px;
+    left: 185.63px;
+}
+.fx12{
+    top:333.19px;
+    left: 324.25px;
 }
