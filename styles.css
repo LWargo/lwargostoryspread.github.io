@@ -256,13 +256,15 @@
 } 
 .rotate-arrow-left-head{
     position: absolute;
-    width: 0;
-    height: 0;
-    left: 598.79px;
-    top: 425.19px;
+    width: 13.97px;
+    height: 9.96px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px #00AEEF;
+    border-bottom: 10px solid #00AEEF;
+    border-radius: 4.15px;
+    left: 598.79px;
+    top: 425.19px;
+
     background: #00AEEF;
     transform: matrix(-0.77, 0.64, 0.64, 0.77, 0, 0);
 
