@@ -409,3 +409,12 @@
     left: 41.1px;
     top: 408.76px;
 }
+.face-shape{
+    position: absolute;
+    width: 60px;
+    height: 175px;
+    left: 175.18px;
+    top: 167px;
+    border-radius: 50%;
+    background: #F7F7F7;
+}
