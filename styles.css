@@ -256,8 +256,8 @@
 } 
 .rotate-arrow-left-head{
     position: absolute;
-    width: 13.97px;
-    height: 9.96px;
+    width: 0;
+    height: 0;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     border-bottom: 10px solid #00AEEF;
