@@ -280,12 +280,14 @@
 }
 .rotate-arrow-right-head{
     position: absolute;
-    width: 13.97px;
-    height: 9.96px;
-    left: 661.79px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #00AEEF;
+    border-radius: 4px;
+    left: 598.79px;
     top: 425.19px;
-    
-    background: #C4C4C4;
     transform: rotate(39.42deg);
 }
 .rotate-arrow-right-body{
