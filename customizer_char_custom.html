@@ -7,12 +7,12 @@
             function showImage(i){
                 alert("your function started!");
                 var img= document.getElementById(i);
-                if(img.style.visibility === "visible"){
+                if(img.style.display === "none"){
                     alert("currently visible");
-                    img.style.visibility = "hidden";
+                    img.style.display = "block";
                 } else {
                     alert("currently invisible");
-                    img.style.visibility = "visible";
+                    img.style.display = "none";
                 }
             }
         </script>
@@ -291,7 +291,7 @@
                 top: 127px;
                 position: absolute;
                 content: url(assets/css/brown\ hair.png);
-                visibility: visible;
+                display: block;
                 
             }
             .cc_bun_hair{
