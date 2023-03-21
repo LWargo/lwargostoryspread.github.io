@@ -3,6 +3,14 @@
     <head>
         <link rel="stylesheet" href="styles.css"> 
         
+            function showImage(){
+                var img= document.getElementById('pic');
+                if(img.style.visibility === "visible"){
+                    img.style.visibility = "hidden";
+                } else {
+                    img.style.visibility = "visible";
+                }
+            }
         <style>
             .cc_second_dividing_line{
                 position: absolute;
@@ -227,6 +235,15 @@
                 position: absolute;
                 background-color: #D1723A;
             }
+            .cc_brown_hair{
+                max-width: 190px;
+                max-height: 190px;
+                left: 350px;
+                top: 130px;
+                position: absolute;
+                content: url(assets/css/brown\ hair.png);
+                visibility: visible;
+            }
         </style>
         <title>Character Customizer Char Custom</title>
     </head>
@@ -310,5 +327,6 @@
         <div class="cc_filler h5 right3"></div>
         <div class="cc_filler h5 right4"></div>
         <div class="cc_filler h5 right5"></div>
+        <div class="cc_brown_hair"></div>
     </body>
 </html>
