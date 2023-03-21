@@ -4,15 +4,15 @@
         <link rel="stylesheet" href="styles.css"> 
         <script>
             
-            function showImage(i){
-                alert("your function started!");
-                let img= document.querySelectorAll(i);
-                if(img.style.visibility === "visible"){
+            function brown_hair_vis(){
+                
+                
+                if(cc_brown_hair.style.visibility === "visible"){
                     alert("currently visible");
-                    img.style.visibility = "hidden";
+                    cc_brown_hair.style.visibility = "hidden";
                 } else {
                     alert("currently invisible");
-                    img.style.visibility = "visible";
+                    cc_brown_hair.style.visibility = "visible";
                 }
             }
         </script>
@@ -346,7 +346,7 @@
         <div class="cc_colors cc_containing_box"></div>
         <div class="cc_blonde_rect"></div>
         <div class="cc_little_arrow"></div>
-        <div class="cc_brown_hair_button h0 left1"type="button"onClick="showImage(cc_brown_hair)";></div>
+        <div class="cc_brown_hair_button h0 left1"type="button"onClick="brown_hair_vis()";></div>
         <div class="cc_left_eye_button cc_eye_sz h2 left1"></div>
         <div class="cc_right_eye_button cc_eye_sz h2"></div>
         <div class="cc_filler h3 left1"></div>
