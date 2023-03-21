@@ -6,13 +6,13 @@
             
             function brown_hair_vis(){
                 
-                
-                if(cc_brown_hair.style.visibility === "visible"){
+                var x = document.getElementById('cc_brown_hair');
+                if(x.style.visibility === "visible"){
                     alert("currently visible");
-                    cc_brown_hair.style.visibility = "hidden";
+                    x.style.visibility = "hidden";
                 } else {
                     alert("currently invisible");
-                    cc_brown_hair.style.visibility = "visible";
+                    x.style.visibility = "visible";
                 }
             }
         </script>
