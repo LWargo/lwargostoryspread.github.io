@@ -6,7 +6,7 @@
             
             function showImage(i){
                 alert("your function started!");
-                let img= document.getElementById(i);
+                let img= document.querySelector(i);
                 if(img.style.visibility === "visible"){
                     alert("currently visible");
                     img.style.visibility = "hidden";
