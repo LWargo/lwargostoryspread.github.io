@@ -272,10 +272,10 @@
     position: absolute;
     width: 34.06px;
     height: 12.3px;
-    left: 629.69px;
+    left: 609.69px;
     top: 441.49px;
 
-    background: #C4C4C4;
+    background: #00AEEF;
     transform: matrix(-0.96, -0.28, -0.28, 0.96, 0, 0);
 }
 .rotate-arrow-right-head{
@@ -294,10 +294,10 @@
     position: absolute;
     width: 34.06px;
     height: 12.3px;
-    left: 630.89px;
+    left: 650.89px;
     top: 441.49px;
     
-    background: #C4C4C4;
+    background: #00AEEF;
     transform: rotate(-15.97deg);    
 }
 .head{
