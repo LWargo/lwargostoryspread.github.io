@@ -5,10 +5,13 @@
         <script>
             
             function showImage(i){
+                alert("your function started!");
                 var img= document.getElementById(i);
                 if(img.style.visibility === "visible"){
+                    alert("currently visible");
                     img.style.visibility = "hidden";
                 } else {
+                    alert("currently invisible");
                     img.style.visibility = "visible";
                 }
             }
