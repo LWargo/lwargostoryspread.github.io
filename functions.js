@@ -131,6 +131,6 @@ function setup(){
 }
 
 function save(){
-    setCookie(hair, hairLocal, 15);
-    setCookie(eye, eyeLocal, 15);
+    setCookie("hair", hairLocal, 15);
+    setCookie("eye", eyeLocal, 15);
 }
