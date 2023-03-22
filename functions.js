@@ -47,5 +47,6 @@ function popup(url, windowname){
     return false;
 }
 function poptop(){
+    console.log("poptop tried happening");
     window.open("customizer_clothes_tops.html", 'cuztomizer_clothes_tops', "height=400, width=600");
 }
