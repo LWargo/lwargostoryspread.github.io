@@ -380,14 +380,21 @@
   }
   .new_left_arrow{
     position: absolute;
-    left: 661.79px;
+    left: 641.79px;
     top: 425.19px;
   
     content: url(assets/css/arrow\ transparent.png);
     max-width: 30px;
     max-height: 30px;
   }
-  
+  .new_right_arrow{
+    position: absolute;
+    left: 661.79px;
+    top: 425.19px;
+    content: url(assets/css/arrow\ transparent.png);
+    max-width: 30px;
+    max-height: 30px;
+  }
 .t00{
     left: 49.21px;
     top: 166px;
