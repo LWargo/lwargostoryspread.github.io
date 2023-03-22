@@ -111,8 +111,8 @@ function setup(){
         console.log("there should not be a cookie");
     }
     */
-   hairLocal = getCookie(hair);
-   eyeLocal = getCookie(eye);
+   hairLocal = getCookie("hair");
+   eyeLocal = getCookie("eye");
 
         //console.log("check cookie is false");
     if(hairLocal == 1) {
