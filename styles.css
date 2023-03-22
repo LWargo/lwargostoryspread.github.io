@@ -379,9 +379,10 @@
     content: '';
   }
   .new_left_arrow{
+    position: absolute;
     left: 661.79px;
     top: 425.19px;
-    transform: rotate(39.42deg);
+  
     content: url(assets/css/arrow\ transparent.png);
     max-width: 30px;
     max-height: 30px;
