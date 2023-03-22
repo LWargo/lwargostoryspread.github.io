@@ -6,6 +6,8 @@ var erv = document.querySelector('.cc_right_eye');
 var slv = document.querySelector('.cc_left_sarah_eye');
 var srv = document.querySelector('.cc_right_sarah_eye');
 var brv = document.querySelector('.cc_brown_hair');
+var hairLocal = 1;
+var eyeLocal = 2;
 
 function brown_hair_vis(){
     var x = document.getElementById("cc_brown_hair");
@@ -84,27 +86,37 @@ function getCookie(getName){
 function checkCookie(){
     console.log("check cookie function started");
     let user = getCookie(document.cookie);
-    if(user != ""){return Boolean(false);}
-    else{ return Boolean(true);}
+    if(user != ""){return Boolean(true);}
+    else{ return Boolean(false);}
 }
 function setup(){
     console.log("set up function started");
-    if(checkCookie() == true){
+    /*if(checkCookie() == true){
         getCookie(document.cookie);
+        //If the "hair" cookie exists, change hairLocal to equal the value of the hair cookie
+        console.log(document.cookie);
         console.log("there should not be a cookie");
     }
-    else{
-        console.log("check cookie is false");
+    */
+   getCookie(hair);
+   getCookie(eye);
+
+        //console.log("check cookie is false");
+    if(hairLocal == 1) {
         brv.style.setProperty('--visibility', 'visible');
+    } else if(hairLocal == 2) {
         buv.style.setProperty('--visibility', 'hidden');
+    }
+    if(eyeLocal == 1){  
         elv.style.setProperty('--visibility', 'hidden');
         erv.style.setProperty('--visibility', 'hidden');
+    }
+    if(eyeLocal == 2){    
         slv.style.setProperty('--visibility', 'visible');
         srv.style.setProperty('--visibility', 'visible');
-
-}
+    }
 }
 
 function save(){
-    
+
 }
