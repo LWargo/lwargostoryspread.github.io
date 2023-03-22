@@ -13,44 +13,57 @@ function brown_hair_vis(){
     var x = document.getElementById("cc_brown_hair");
     if(x.style.visibility === "visible"){
         x.style.visibility = "hidden";
+        hairLocal = 2;
     } else {
         x.style.visibility = "visible";
+        hairLocal = 1;
     }
 }
 function bun_hair_vis(){
     var x = document.getElementById("cc_bun_hair");
     if(x.style.visibility === "visible"){
         x.style.visibility = "hidden";
+        hairLocal =1;
+
     } else {
         x.style.visibility = "visible";
+        hairLocal = 2;
     }
 }
 function eye_vis(){
     var x = document.getElementById("cc_left_eye");
     if(x.style.visibility === "visible"){
         x.style.visibility = "hidden";
+        eyeLocal = 2;
     } else {
         x.style.visibility = "visible";
+        eyeLocal = 1;
     }
     var y = document.getElementById("cc_right_eye");
     if(y.style.visibility === "visible"){
         y.style.visibility = "hidden";
+        eyeLocal = 2;
     } else {
         y.style.visibility = "visible";
+        eyeLocal = 1;
     }
 }
 function sarah_vis(){
     var x = document.getElementById("cc_left_sarah_eye");
     if(x.style.visibility === "visible"){
         x.style.visibility = "hidden";
+        eyeLocal = 1;
     } else {
         x.style.visibility = "visible";
+        eyeLocal = 2;
     }
     var y = document.getElementById("cc_right_sarah_eye");
     if(y.style.visibility === "visible"){
         y.style.visibility = "hidden";
+        eyeLocal = 1;
     } else {
         y.style.visibility = "visible";
+        eyeLocal = 2;
     }
 }
 function popup(url, windowname){
