@@ -95,5 +95,12 @@ function setup(){
     }
     else{
         console.log("check cookie is false");
-    }
+        brv.style.setProperty('--visibility', 'visible');
+        buv.style.setProperty('--visibility', 'hidden');
+        elv.style.setProperty('--visibility', 'hidden');
+        erv.style.setProperty('--visibility', 'hidden');
+        slv.style.setProperty('--visibility', 'visible');
+        srv.style.setProperty('--visibility', 'visible');
+
+}
 }
