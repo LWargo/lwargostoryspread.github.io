@@ -28,7 +28,7 @@ function eye_vis(){
         y.style.visibility = "visible";
     }
 }
-function sarah_eye_vis(){
+function sarah_vis(){
     var x = document.getElementById("cc_left_sarah_eye");
     if(x.style.visibility === "visible"){
         x.style.visibility = "hidden";
