@@ -93,7 +93,7 @@ function setup(){
         getCookie(document.cookie);
         console.log("there should not be a cookie");
     }
-    if(checkCookie() == false){
+    else{
         console.log("check cookie is false");
     }
 }
