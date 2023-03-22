@@ -46,3 +46,6 @@ function popup(url, windowname){
     window.open(url, windowname, 'height=800, width=900')
     return false;
 }
+function poptop(){
+    window.open("customizer_clothes_tops.html", 'cuztomizer_clothes_tops', "height=400, width=600");
+}
