@@ -1,3 +1,10 @@
+var brv = document.querySelector(':cc_brown_hair');
+var buv = document.querySelector(':cc_bun_hair');
+var elv = document.querySelector(':cc_left_eye');
+var erv = document.querySelector(':cc_right_eye');
+var slv = document.querySelector(':cc_left_sarah_eye');
+var srv = document.querySelector(':cc_right_sarah_eye');
+
 function brown_hair_vis(){
     var x = document.getElementById("cc_brown_hair");
     if(x.style.visibility === "visible"){
@@ -50,11 +57,11 @@ function poptop(){
     console.log("poptop tried happening");
     window.open("customizer_clothes_tops.html", 'cuztomizer_clothes_tops', "height=400, width=600");
 }
-function setCookie(cookie_name, cookie_hair, cookie_eye, expiration){
+function setCookie(name, value, expiration){
     const d = new Date();
     d.setTime(d.getTime() + (expiration*24*60*60*1000));
     let expires = "expires=" + d.toUTCString();
-    document.cookie = cookie_name + ": Hair= " + cookie_hair + "; Eyes= " + cookie_eye + ";" + expires + ";path/";
+    document.cookie = name + " ; " + value  + ";" + expires + ";path/";
 
 }
 function getCookie(getName){
@@ -71,4 +78,18 @@ function getCookie(getName){
         }
     }
     return "";
+}
+function checkCookie(){
+    let user = getCookie("saved");
+    if(user != ""){return Boolean(false);}
+    else{ return Boolean(true);}
+}
+function setup(){
+    console.log("set up function started");
+    if(checkCookie() == true){
+        getCookie(saved);
+    }
+    if(checkCookie() == false){
+        console.log("check cookie is false");
+    }
 }
