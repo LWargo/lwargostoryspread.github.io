@@ -83,7 +83,7 @@ function getCookie(getName){
 }
 function checkCookie(){
     console.log("check cookie function started");
-    let user = getCookie("saved");
+    let user = getCookie(document.cookie);
     if(user != ""){return Boolean(false);}
     else{ return Boolean(true);}
 }
