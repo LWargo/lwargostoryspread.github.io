@@ -42,3 +42,7 @@ function sarah_vis(){
         y.style.visibility = "visible";
     }
 }
+function popup(url, windowname){
+    window.open(url, windowname, 'height=800, width=900')
+    return false;
+}
