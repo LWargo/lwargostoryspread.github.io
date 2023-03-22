@@ -1,11 +1,11 @@
 
-var brv = document.querySelector(':cc_brown_hair');
+
 var buv = document.querySelector(':cc_bun_hair');
 var elv = document.querySelector(':cc_left_eye');
 var erv = document.querySelector(':cc_right_eye');
 var slv = document.querySelector(':cc_left_sarah_eye');
 var srv = document.querySelector(':cc_right_sarah_eye');
-
+var brv = document.querySelector(':cc_brown_hair');
 
 function brown_hair_vis(){
     var x = document.getElementById("cc_brown_hair");
@@ -91,6 +91,7 @@ function setup(){
     console.log("set up function started");
     if(checkCookie() == true){
         getCookie(saved);
+        console.log("there should not be a cookie");
     }
     if(checkCookie() == false){
         console.log("check cookie is false");
