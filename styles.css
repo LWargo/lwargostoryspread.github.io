@@ -96,6 +96,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
     color: #00aeef;
     border: none;
