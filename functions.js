@@ -1,5 +1,5 @@
-
-
+//import {hairJSON,eyeJSON} from './cookie';
+//import { hairJSON, eyeJSON } from "./cookie" assert {type: 'json'};
 var buv = document.querySelector('.cc_bun_hair');
 var elv = document.querySelector('.cc_left_eye');
 var erv = document.querySelector('.cc_right_eye');
@@ -64,6 +64,7 @@ function sarah_vis(){
     } else {
         y.style.visibility = "visible";
         eyeLocal = 2;
+
     }
 }
 function popup(url, windowname){
@@ -73,7 +74,7 @@ function popup(url, windowname){
 function poptop(){
     console.log("poptop tried happening");
     window.open("customizer_clothes_tops.html", 'cuztomizer_clothes_tops', "height=400, width=600");
-}
+}/*
 function setCookie(name, value, expiration){
     const d = new Date();
     d.setTime(d.getTime() + (expiration*24*60*60*1000));
@@ -81,9 +82,30 @@ function setCookie(name, value, expiration){
     document.cookie = name + " ; " + value  + ";" + expires + ";path/";
 
 }
+*/
+function setCookie(name,value, days) {
+    
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    
+    document.cookie = name + "=" + (value || "") +expires;
+    console.log(document.cookie)
+}
+
 function getCookie(getName){
+    console.log("starting to grab cookies");
+    console.log(hairLocal);
+    console.log(eyeLocal);
     let name = getName + "=";
+    console.log("made the name");
+    console.log(hairLocal);
+    console.log(eyeLocal);
     let decodedCookie = decodeURIComponent(document.cookie);
+    
     let ca = decodedCookie.split(' ; ');
     for( let i = 0; i < ca.length; i++){
         let c = ca[i];
@@ -96,6 +118,7 @@ function getCookie(getName){
     }
     return "";
 }
+
 function checkCookie(){
     console.log("check cookie function started");
     let user = getCookie(document.cookie);
@@ -103,6 +126,9 @@ function checkCookie(){
     else{ return Boolean(false);}
 }
 function setup(){
+    console.log("setup function finally ran");
+    console.log(hairLocal);
+    console.log(eyeLocal);
     console.log("set up function started");
     /*if(checkCookie() == true){
         getCookie(document.cookie);
@@ -110,10 +136,17 @@ function setup(){
         console.log(document.cookie);
         console.log("there should not be a cookie");
     }
-    */
+    
+   if(checkCookie()== false){
+        setCookie("hair", hairLocal, 15);
+        setCookie("eye", eyeLocal, 15);
+   }
    hairLocal = getCookie("hair");
    eyeLocal = getCookie("eye");
-
+*/
+   new_setup();
+    console.log(hairLocal);
+    console.log(eyeLocal);
         //console.log("check cookie is false");
     if(hairLocal == 1) {
         brv.style.setProperty('--visibility', 'visible');
@@ -132,7 +165,23 @@ function setup(){
 
 function save(){
     setCookie("hair", hairLocal, 15);
-    console.log(1);
     setCookie("eye", eyeLocal, 15);
-    console.log(eyeLocal);
+}
+
+function new_setup(){
+    console.log("new setup function was launched");
+    if(localStorage.getItem("hair") === null && localStorage.getItem("eye")===null){
+        localStorage.setItem("hair", hairLocal);
+        localStorage.setItem("eye", eyeLocal);
+    }
+    else{
+        hairLocal = localStorage.getItem("hair");
+        eyeLocal = localStorage.getItem("eye");
+    }
+}
+function new_save(){
+    localStorage.setItem("hair", hairLocal);
+    console.log(localStorage.getItem("hair"));
+    localStorage.setItem("eye", eyeLocal);
+    console.log(localStorage.getItem("eye"));
 }
