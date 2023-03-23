@@ -142,7 +142,7 @@
                 position: absolute;
                 width: 58px;
                 height: 16px;
-                left: 381.38px;
+                left: 376.38px;
                 top: 480px;
 
                 font-family: 'DIN Round Pro';
@@ -284,7 +284,7 @@
                 top: 127px;
                 
                 content: url(assets/css/brown\ hair.png);
-                --visibility: visible;
+                visibility: hidden;
                 
             }
 
@@ -295,7 +295,7 @@
                 top: 112px;
                 position: absolute;
                 content: url(assets/css/bun.png);
-                --visibility: hidden;
+                visibility: hidden;
                 
             }
             .cc_left_eye{
@@ -305,7 +305,7 @@
                 top: 147px;
                 position: absolute;
                 content: url(assets/css/left\ eye.png);
-                --visibility: hidden;
+                visibility: hidden;
             }
             .cc_right_eye{
                 max-width: 10.5px;
@@ -314,7 +314,7 @@
                 top: 147px;
                 position: absolute;
                 content: url(assets/css/right\ eye.png);
-                --visibility: hidden;
+                visibility: hidden;
             }
             .cc_right_sarah_eye{
                 max-width: 10.5px;
@@ -323,7 +323,7 @@
                 top: 147px;
                 position: absolute;
                 content: url(assets/css/right\ sarah\ eye.png);
-                --visibility: visible;
+                visibility: hidden;
             }
             .cc_left_sarah_eye{
                 max-width: 10.5px;
@@ -332,7 +332,25 @@
                 top: 147px;
                 position: absolute;
                 content: url(assets/css/left\ sarah\ eye.png);
-                --visibility: visible;
+                visibility: hidden;
+            }
+            .new_left_arrow{
+                position: absolute;
+                left: 371.79px;
+                top: 455.19px;
+                transform: rotate(-60deg);
+                content: url(assets/css/arrow\ transparent.png);
+                max-width: 20px;
+                max-height: 20px;
+            }
+            .new_right_arrow{
+                position: absolute;
+                left: 431.79px;
+                top: 455.19px;
+                transform: rotate(60deg);
+                content: url(assets/css/arrow\ transparent.png);
+                max-width: 20px;
+                max-height: 20px;
             }
         </style>
         <title>Character Customizer Char Custom</title>
@@ -427,9 +445,10 @@
         <div class="cc_right_eye"id="cc_right_eye"></div>
         <div class="cc_right_sarah_eye"id="cc_right_sarah_eye"></div>
         <div class="cc_left_sarah_eye"id="cc_left_sarah_eye"></div>
-
+        <div class="new_left_arrow"></div>
+        <div class="new_right_arrow"></div>
     </body>
     <script> 
-    <body onload="setup();"></body>
+    window.onload=setup();
     </script>
 </html>

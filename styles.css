@@ -380,7 +380,7 @@
   }
   .new_left_arrow{
     position: absolute;
-    left: 611.79px;
+    left: 591.79px;
     top: 425.19px;
     transform: rotate(-60deg);
     content: url(assets/css/arrow\ transparent.png);
@@ -389,7 +389,7 @@
   }
   .new_right_arrow{
     position: absolute;
-    left: 661.79px;
+    left: 651.79px;
     top: 425.19px;
     transform: rotate(60deg);
     content: url(assets/css/arrow\ transparent.png);

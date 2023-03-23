@@ -1,5 +1,6 @@
 //import {hairJSON,eyeJSON} from './cookie';
 //import { hairJSON, eyeJSON } from "./cookie" assert {type: 'json'};
+var brv = document.querySelector('.cc_brown_hair');
 var buv = document.querySelector('.cc_bun_hair');
 var elv = document.querySelector('.cc_left_eye');
 var erv = document.querySelector('.cc_right_eye');
@@ -18,6 +19,7 @@ function brown_hair_vis(){
         x.style.visibility = "visible";
         hairLocal = 1;
     }
+    console.log("toggled brown hair visibility");
 }
 function bun_hair_vis(){
     var x = document.getElementById("cc_bun_hair");
@@ -29,6 +31,7 @@ function bun_hair_vis(){
         x.style.visibility = "visible";
         hairLocal = 2;
     }
+    console.log("toggled bun hair visibility");
 }
 function eye_vis(){
     var x = document.getElementById("cc_left_eye");
@@ -149,17 +152,22 @@ function setup(){
     console.log(eyeLocal);
         //console.log("check cookie is false");
     if(hairLocal == 1) {
-        brv.style.setProperty('--visibility', 'visible');
+        brown_hair_vis();
+        //brv.style.setProperty('--visibility', 'visible');
     } else if(hairLocal == 2) {
-        buv.style.setProperty('--visibility', 'hidden');
+        bun_hair_vis();
+        
+        //buv.style.setProperty('--visibility', 'hidden');
     }
     if(eyeLocal == 1){  
-        elv.style.setProperty('--visibility', 'hidden');
-        erv.style.setProperty('--visibility', 'hidden');
+        eye_vis();
+        //elv.style.setProperty('--visibility', 'hidden');
+        //erv.style.setProperty('--visibility', 'hidden');
     }
-    if(eyeLocal == 2){    
-        slv.style.setProperty('--visibility', 'visible');
-        srv.style.setProperty('--visibility', 'visible');
+    if(eyeLocal == 2){   
+        sarah_vis(); 
+      //  slv.style.setProperty('--visibility', 'visible');
+      //  srv.style.setProperty('--visibility', 'visible');
     }
 }
 
@@ -173,8 +181,10 @@ function new_setup(){
     if(localStorage.getItem("hair") === null && localStorage.getItem("eye")===null){
         localStorage.setItem("hair", hairLocal);
         localStorage.setItem("eye", eyeLocal);
+        console.log("local storage was totally null");
     }
     else{
+        console.log("smthg existed in local storage");
         hairLocal = localStorage.getItem("hair");
         eyeLocal = localStorage.getItem("eye");
     }
